@@ -10,6 +10,7 @@
   --cosmic-charcoal: #1c1c2e;
   --plasma-cyan: #00c2e0;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  min-height: 100vh;
+}
+
 .hero_header {
   width: 100%;
   min-height: 80px;
@@ -41,11 +46,13 @@ a {
   background-color: var(--deep-space);
   border-bottom: 2px solid var(--solar-flare);
 }
+
 .hero_logo {
   width: 60px;
   height: auto;
   display: block;
 }
+
 .hero_nav-menu {
   display: flex;
   gap: 3rem;
@@ -64,6 +71,7 @@ a {
   color: var(--amber-glow);
   font-weight: 500;
 }
+
 .hero {
   min-height: 100vh;
   background-image:
@@ -75,6 +83,7 @@ a {
   background-position: 50%;
   background-attachment: fixed;
 }
+
 .hero_content {
   min-height: 80vh;
   width: 50vw;
@@ -92,16 +101,19 @@ a {
     letter-spacing: 0.05em;
     /* text-wrap: balance; */
   }
+
   strong {
     font-weight: 700;
     color: var(--solar-flare);
   }
+
   p {
     font-size: 2vmin;
     font-weight: 100;
     letter-spacing: 0.05em;
     padding: 0.3rem 0;
   }
+
   .hero_button {
     color: var(--stellar-white);
     background-color: transparent;
@@ -121,4 +133,97 @@ a {
     border-color: var(--solar-flare);
     transform: translateY(-2px);
   }
+}
+
+.svgLogo path {
+  height: 5vmin;
+  fill-opacity: 0;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: texto 3s linear forwards;
+}
+
+@keyframes texto {
+
+  90% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill-opacity: 1;
+    stroke: transparent;
+  }
+}
+
+.problem {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.936), rgba(0, 0, 0, 0.573)),
+    url(/images/datacenter-error.png);
+  border-top: 2px solid var(--solar-flare);
+  border-bottom: 2px solid var(--solar-flare);
+  display: flex;
+
+  .problem_content {
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    padding: 0 5rem;
+  }
+
+  .problem_left {
+    width: 50%;
+    color: var(--stellar-white);
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .problem_right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: #151522;
+    border: 1px solid var(--deep-space);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    transition: .5s ease-in-out;
+
+    .card-icon path {
+      fill: var(--solar-flare);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--stellar-white);
+    }
+  }
+
+  .card:hover {
+    border-color: var(--solar-flare);
+    transform: translateY(-5px);
+  }
+
 }
