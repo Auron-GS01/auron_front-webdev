@@ -7,6 +7,7 @@
   <title>Auron</title>
   <link rel="icon" href="/images/logotipo.png" type="image/png" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/quiz.css" />
 </head>
 
 <body>
@@ -21,7 +22,7 @@
           <li><a href="#objetivos">Objetivos</a></li>
           <!-- nessa parte colocar o público-alvo também, além do impacto, quem irá impactar -->
           <li><a href="#impacto">Impacto</a></li>
-          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#quiz">Quiz</a></li>
         </ul>
       </nav>
     </header>
@@ -311,8 +312,64 @@
   </div>
 </section>
 
+<section id="quiz" class="quiz">
 
+  <div class="quiz_content">
 
+    <div class="quiz_header">
+      <h3 class="quiz_label">04 — Diagnóstico</h3>
+
+      <h1 class="quiz_title">
+        Sua infraestrutura está preparada para eventos solares?
+      </h1>
+
+      <p class="quiz_description">
+        Responda algumas perguntas e descubra o nível de risco da sua operação.
+      </p>
+    </div>
+
+    <div class="quiz_box">
+
+      <div class="quiz_question active">
+        <h2>Você possui monitoramento em tempo real da sua infraestrutura?</h2>
+
+        <div class="quiz_options">
+          <button data-score="2">Sim</button>
+          <button data-score="0">Não</button>
+        </div>
+      </div>
+
+      <div class="quiz_question">
+        <h2>Seu sistema possui redundância energética?</h2>
+
+        <div class="quiz_options">
+          <button data-score="2">Sim</button>
+          <button data-score="1">Parcialmente</button>
+          <button data-score="0">Não</button>
+        </div>
+      </div>
+
+      <div class="quiz_question">
+        <h2>Você recebe alertas preditivos de falhas?</h2>
+
+        <div class="quiz_options">
+          <button data-score="2">Sim</button>
+          <button data-score="0">Não</button>
+        </div>
+      </div>
+
+      <div class="quiz_result hidden">
+        <h2>Resultado</h2>
+        <p class="result_text"></p>
+        <button class="restart">Refazer teste</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="/js/quiz.js"></script>
 </body>
-
 </html>
