@@ -165,7 +165,7 @@ section {
   border-bottom: 2px solid var(--solar-flare);
   display: flex;
 
-  .problem_label{
+  .problem_label {
     font-size: 0.9rem;
     color: var(--solar-flare);
   }
@@ -265,7 +265,7 @@ section {
 
   .technology_label {
     font-size: 0.9rem;
-    color: var(--solar-flare);
+    color: var(--plasma-cyan);
   }
 
   .technology_title {
@@ -372,44 +372,43 @@ section {
 }
 
 .objectives {
-    background-color: var(--deep-space);
-    border-bottom: 2px solid var(--solar-flare);
-}
+  background-color: var(--deep-space);
+  border-bottom: 2px solid var(--solar-flare);
 
-.objectives_content {
+  .objectives_content {
     padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-}
+  }
 
-.objectives_text {
+  .objectives_text {
     max-width: 820px;
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
     color: var(--stellar-white);
-}
+  }
 
-.objectives_label {
+  .objectives_label {
     font-size: 0.9rem;
     color: var(--solar-flare);
-}
+  }
 
-.objectives_title {
+  .objectives_title {
     font-size: 2rem;
     color: var(--stellar-white);
-}
+  }
 
-.objectives_description {
+  .objectives_description {
     max-width: 620px;
     font-size: 1rem;
     line-height: 1.5;
     color: rgba(240, 237, 232, 0.75);
-}
+  }
 
-.impact_chain {
+  .objective_chain {
     padding: 2rem;
     display: flex;
     align-items: stretch;
@@ -418,9 +417,9 @@ section {
     background-color: #151522;
     border: 1px solid rgba(240, 237, 232, 0.08);
     border-radius: 20px;
-}
+  }
 
-.impact_step {
+  .objective_step {
     flex: 1;
     padding: 1.4rem;
     display: flex;
@@ -430,40 +429,123 @@ section {
     border: 1px solid rgba(240, 237, 232, 0.08);
     border-radius: 16px;
     transition: 0.4s ease-in-out;
-}
 
-.impact_step:hover {
+    span {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: var(--plasma-cyan);
+      border: 1px solid rgba(0, 194, 224, 0.35);
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--stellar-white);
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: rgba(240, 237, 232, 0.7);
+    }
+  }
+
+  .objective_step:hover {
     border-color: rgba(0, 194, 224, 0.45);
     transform: translateY(-5px);
-}
+  }
 
-.impact_step span {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
-    color: var(--plasma-cyan);
-    border: 1px solid rgba(0, 194, 224, 0.35);
-    border-radius: 50%;
-}
-
-.impact_step h3 {
-    font-size: 1.2rem;
-    color: var(--stellar-white);
-}
-
-.impact_step p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: rgba(240, 237, 232, 0.7);
-}
-
-.impact_arrow {
+  .objective_arrow {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     color: var(--solar-flare);
+  }
 }
+
+.impact {
+  background-color: var(--deep-space);
+  border-bottom: 2px solid var(--solar-flare);
+  display: flex;
+
+  .impact_label {
+    font-size: 0.9rem;
+    color: var(--plasma-cyan);
+  }
+
+  .impact_content {
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    padding: 0 5rem;
+  }
+
+  .impact_left {
+    width: 50%;
+    color: var(--stellar-white);
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .impact_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: #151522;
+    border: 1px solid rgba(240, 237, 232, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: 0.5s ease-in-out;
+
+    .card-icon path {
+      fill: var(--solar-flare);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--stellar-white);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      color: #b7bcc9;
+      line-height: 1.5;
+    }
+  }
+
+  .card:hover {
+    border-color: var(--plasma-cyan);
+    transform: translateY(-5px);
+  }
+
+  .impact_quote {
+    border-left: 3px solid var(--solar-flare);
+    padding-left: 1rem;
+    color: var(--stellar-white);
+    font-style: italic;
+    opacity: 0.9;
+  }
+}
+
