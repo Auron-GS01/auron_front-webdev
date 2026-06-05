@@ -1,0 +1,38 @@
+.light-theme {
+  --stellar-white: #111111;
+  --deep-space: #f5f7fb;
+  --cosmic-charcoal: #ffffff;
+  --solar-flare: #d45c09;
+  --amber-glow: #e98b32;
+  --plasma-cyan: #0088a3;
+
+  --nav-link-color: rgba(17, 17, 17, 0.78);
+  --text-soft: rgba(17, 17, 17, 0.72);
+  --text-soft-secondary: rgba(17, 17, 17, 0.65);
+  --impact-card-text: #4f5665;
+  --hero-overlay-dark: rgba(255, 255, 255, 0.78);
+  --hero-overlay-light: rgba(255, 255, 255, 0.45);
+  --border-neutral: #b5b5b5;
+  --card-border: rgba(17, 17, 17, 0.08);
+  --cyan-border-hover: rgba(0, 136, 163, 0.35);
+  --cyan-border-soft: rgba(0, 136, 163, 0.2);
+  --orange-border-hover: rgba(212, 92, 9, 0.28);
+  --card-background: #ffffff;
+  --svg-stroke: #111111;
+}
+
+
+.theme_button {
+  padding: 0.8rem 1.4rem;
+  border: 1px solid var(--plasma-cyan);
+  background: transparent;
+  color: var(--stellar-white);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme_button:hover {
+  background: var(--plasma-cyan);
+  color: var(--deep-space);
+}
