@@ -27,7 +27,7 @@
   }
 
   .slideshow_description {
-    color: #b8c1d1;
+    color: var(--slideshow-description);
     line-height: 1.7;
     font-size: 1rem;
   }
@@ -60,19 +60,19 @@
 
   .slide_1 {
     background-image:
-      linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+      linear-gradient(to top, var(--slide-overlay-dark), var(--slide-overlay-light)),
       url("/images/solarstorm.png");
   }
 
   .slide_2 {
     background-image:
-      linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+      linear-gradient(to top, var(--slide-overlay-dark), var(--slide-overlay-light)),
       url("/images/satelite.png");
   }
 
   .slide_3 {
     background-image:
-      linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+      linear-gradient(to top, var(--slide-overlay-dark), var(--slide-overlay-light)),
       url("/images/datacenter_protegido.png");
   }
 
@@ -87,7 +87,7 @@
     }
 
     p {
-      color: #d0d7e5;
+      color: var(--slide-text);
       line-height: 1.6;
       max-width: 600px;
     }
@@ -103,8 +103,8 @@
       height: 60px;
       border: none;
       border-radius: 50%;
-      background: #151522;
-      color: white;
+      background: var(--slider-button-hover-text);
+      color: var(--slider-button-text);
       cursor: pointer;
       font-size: 1.5rem;
       transition: 0.3s ease;
@@ -112,7 +112,7 @@
 
     button:hover {
       background: var(--plasma-cyan);
-      color: black;
+      color: var(--slider-button-text);
     }
   }
 }

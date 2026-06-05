@@ -9,6 +9,8 @@
   --deep-space: #08080f;
   --cosmic-charcoal: #1c1c2e;
   --plasma-cyan: #00c2e0;
+
+  --slideshow-description: #b8c1d1; --slide-overlay-dark: rgba(0, 0, 0, 0.8); --slide-overlay-light: rgba(0, 0, 0, 0.2); --slide-text: #d0d7e5; --slider-button-bg: #151522; --slider-button-text: #ffffff; --slider-button-hover-text: #000000;
 }
 
 * {
