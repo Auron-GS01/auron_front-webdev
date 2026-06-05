@@ -19,6 +19,15 @@
   --orange-border-hover: rgba(212, 92, 9, 0.28);
   --card-background: #ffffff;
   --svg-stroke: #111111;
+
+  --slideshow-description: #4f5665;
+  --slide-overlay-dark: rgba(255, 255, 255, 0.55);
+  --slide-overlay-light: rgba(255, 255, 255, 0.15);
+  --slide-text: #2d3440;
+  --slider-button-bg: #ffffff;
+  --slider-button-text: #111111;
+  --slider-button-hover-text: #ffffff;
+
 }
 
 
