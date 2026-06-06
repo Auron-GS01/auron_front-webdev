@@ -51,6 +51,21 @@ section {
   min-height: 100vh;
 }
 
+.light-theme #logo {
+    content: url("/images/logo_dark.png");
+}
+.dark-theme #logo {
+    content: url("/images/logotipo.png");
+}
+
+.dark-theme .svgLogo {
+    color: white;
+}
+
+.light-theme .svgLogo {
+    color: black;
+}
+
 .hero_header {
   width: 100%;
   min-height: 80px;
