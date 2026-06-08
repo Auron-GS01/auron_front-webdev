@@ -26,3 +26,6 @@ nextBtn.addEventListener("click", () => {
     updateSlider();
 });
 
+prevBtn.addEventListener("click", () => {
+
+currentSlide--;
