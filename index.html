@@ -7,11 +7,7 @@
   <title>Auron</title>
   <link rel="icon" href="/images/logotipo.png" type="image/png" />
   <link rel="stylesheet" href="/css/style.css" />
-
-  <link rel="stylesheet" href="/css/accessibility.css">
-
-  <link rel="stylesheet" href="/css/slideshow.css" />
-
+  <link rel="stylesheet" href="/css/quiz.css" />
 </head>
 
 <body>
@@ -27,7 +23,7 @@
           <li><a href="#objetivos">Objetivos</a></li>
           <!-- nessa parte colocar o público-alvo também, além do impacto, quem irá impactar -->
           <li><a href="#impacto">Impacto</a></li>
-          <li><button id="themeToggle" class="theme_button" type="button"> Alternar tema </button></li>
+          <li><a href="#quiz">Quiz</a></li>
         </ul>
       </nav>
     </header>
@@ -393,54 +389,64 @@
   </div>
 </section>
 
-<footer class="footer">
-    <div class="footer_content">
+<section id="quiz" class="quiz">
 
-        <div class="footer_brand">
-            <h2 class="footer_logo">Auron</h2>
-            <p class="footer_text">
-                Plataforma B2B de proteção contra anomalias solares.
-            </p>
+  <div class="quiz_content">
+
+    <div class="quiz_header">
+      <h3 class="quiz_label">04 — Diagnóstico</h3>
+
+      <h1 class="quiz_title">
+        Sua infraestrutura está preparada para eventos solares?
+      </h1>
+
+      <p class="quiz_description">
+        Responda algumas perguntas e descubra o nível de risco da sua operação.
+      </p>
+    </div>
+
+    <div class="quiz_box">
+
+      <div class="quiz_question active">
+        <h2>Você possui monitoramento em tempo real da sua infraestrutura?</h2>
+
+        <div class="quiz_options">
+          <button data-score="2">Sim</button>
+          <button data-score="0">Não</button>
         </div>
+      </div>
 
-        <div class="footer_team">
-            <h3 class="footer_title">Integrantes</h3>
+      <div class="quiz_question">
+        <h2>Seu sistema possui redundância energética?</h2>
 
-            <ul class="footer_list">
-                <li>
-                    <span>Esther</span>
-                    <span>RM 570860</span>
-                </li>
-
-                <li>
-                    <span>Izabela</span>
-                    <span>RM 570316</span>
-                </li>
-
-                <li>
-                    <span>João Victor</span>
-                    <span>RM 569949</span>
-                </li>
-
-                <li>
-                    <span>Matheus</span>
-                    <span>RM 571458</span>
-                </li>
-
-                <li>
-                    <span>Felipe</span>
-                    <span>RM 570863</span>
-                </li>
-            </ul>
+        <div class="quiz_options">
+          <button data-score="2">Sim</button>
+          <button data-score="1">Parcialmente</button>
+          <button data-score="0">Não</button>
         </div>
+      </div>
+
+      <div class="quiz_question">
+        <h2>Você recebe alertas preditivos de falhas?</h2>
+
+        <div class="quiz_options">
+          <button data-score="2">Sim</button>
+          <button data-score="0">Não</button>
+        </div>
+      </div>
+
+      <div class="quiz_result hidden">
+        <h2>Resultado</h2>
+        <p class="result_text"></p>
+        <button class="restart">Refazer teste</button>
+      </div>
 
     </div>
 
-    <div class="footer_bottom"> <p> Global Solution 01 — 2026 <strong>@FIAP</strong></p> </div>
-</footer>
+  </div>
 
-<script src="/js/accessibility.js"></script>
-<script src="/js/slideshow.js"></script>
+</section>
+
+<script src="/js/quiz.js"></script>
 </body>
-
 </html>
