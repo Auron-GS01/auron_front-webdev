@@ -26,3 +26,9 @@ if (currentQuestion < questions.length) {
     }
   });
 });
+
+function showResult() {
+  questions.forEach((q) => q.classList.remove("active"));
+  resultBox.classList.remove("hidden");
+
+  let message = "";
