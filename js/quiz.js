@@ -46,3 +46,11 @@ if (score <= 2) {
 
   resultText.textContent = message;
 }
+
+restartBtn.addEventListener("click", () => {
+    currentQuestion = 0;
+    score = 0;
+
+    resultBox.classList.add("hidden");
+    showQuestion(0);
+});
