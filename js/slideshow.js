@@ -35,3 +35,15 @@ if(currentSlide < 0) {
 }
 
 updateSlider();
+
+setInterval(() => {
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
+
+    updateSlider();
+
+}, 5000);
