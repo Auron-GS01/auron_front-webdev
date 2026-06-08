@@ -29,3 +29,9 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
 
 currentSlide--;
+
+if(currentSlide < 0) {
+    currentSlide = slides.length - 1;
+}
+
+updateSlider();
