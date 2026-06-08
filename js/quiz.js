@@ -32,3 +32,17 @@ function showResult() {
   resultBox.classList.remove("hidden");
 
   let message = "";
+
+if (score <= 2) {
+    message =
+      "Alto risco: sua infraestrutura está vulnerável a eventos solares.";
+  } else if (score <= 4) {
+    message =
+      "Risco moderado: existem pontos críticos que precisam de atenção.";
+  } else {
+    message =
+      "Baixo risco: sua operação está bem preparada para eventos extremos.";
+  }
+
+  resultText.textContent = message;
+}
