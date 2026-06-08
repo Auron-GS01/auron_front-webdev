@@ -11,19 +11,7 @@
   --cosmic-charcoal: #1c1c2e;
   --plasma-cyan: #00c2e0;
 
-  --nav-link-color: rgba(240, 237, 232, 0.78);
-  --hero-overlay-dark: rgba(0, 0, 0, 0.936);
-  --hero-overlay-light: rgba(0, 0, 0, 0.573);
-  --border-neutral: #969696;
-  --svg-stroke: #ffffff;
-  --card-background: #151522;
-  --card-border: rgba(240, 237, 232, 0.08);
-  --text-soft: rgba(240, 237, 232, 0.75);
-  --text-soft-secondary: rgba(240, 237, 232, 0.7);
-  --cyan-border-hover: rgba(0, 194, 224, 0.45);
-  --cyan-border-soft: rgba(0, 194, 224, 0.35);
-  --orange-border-hover: rgba(232, 87, 13, 0.45);
-  --impact-card-text: #b7bcc9;
+  --slideshow-description: #b8c1d1; --slide-overlay-dark: rgba(0, 0, 0, 0.8); --slide-overlay-light: rgba(0, 0, 0, 0.2); --slide-text: #d0d7e5; --slider-button-bg: #151522; --slider-button-text: #ffffff; --slider-button-hover-text: #000000;
 }
 
 * {
