@@ -13,3 +13,8 @@ function showQuestion(index) {
     questions[index].classList.add("active");
   }
 }
+
+document.querySelectorAll(".quiz_options button").forEach((button) => {
+  button.addEventListener("click", () => {
+    score += Number(button.dataset.score);
+    currentQuestion++;
