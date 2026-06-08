@@ -46,4 +46,4 @@ setInterval(() => {
 
     updateSlider();
 
-}, 5000);
+}, 5000)});
