@@ -5,3 +5,11 @@ const restartBtn = document.querySelector(".restart");
 
 let currentQuestion = 0;
 let score = 0;
+
+function showQuestion(index) {
+  questions.forEach((q) => q.classList.remove("active"));
+
+  if (questions[index]) {
+    questions[index].classList.add("active");
+  }
+}
