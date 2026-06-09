@@ -77,6 +77,7 @@ section {
   align-items: center;
   background-color: var(--deep-space);
   border-bottom: 2px solid var(--solar-flare);
+  gap: 2rem;
 }
 
 .hero_logo {
@@ -85,9 +86,15 @@ section {
   display: block;
 }
 
+.hero_nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .hero_nav-menu {
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
   align-items: center;
   list-style: none;
 
@@ -96,6 +103,8 @@ section {
     letter-spacing: 0.05em;
     color: var(--nav-link-color);
     transition: 250ms ease-in-out;
+    white-space: nowrap;
+  font-size: 0.9rem;
   }
 }
 
@@ -193,9 +202,6 @@ section {
 }
 
 .problem {
-  /* background-image:
-    linear-gradient(to right, rgba(0, 0, 0, 0.936), rgba(0, 0, 0, 0.573)),
-    url(/images/datacenter-error.png); */
   background-color: var(--deep-space);
   border-top: 2px solid var(--solar-flare);
   border-bottom: 2px solid var(--solar-flare);
@@ -644,12 +650,265 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  .footer_content {
+@media (max-width: 1400px) {
+
+
+  .hero_header {
+    padding: 2rem 6rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero_nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .hero_content {
+    width: 100%;
+    padding: 4rem 2rem;
+    min-height: 70vh;
+  }
+
+  .hero_content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero_content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero_button {
+    font-size: 1rem !important;
+  }
+
+  .problem .problem_content {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .problem .problem_left,
+  .problem .problem_right {
+    width: 100%;
+  }
+
+  .problem .problem_right {
+    justify-content: center;
+  }
+
+  .problem .cards {
+    width: 100%;
+  }
+
+  .technology .technology_content {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .technology .technology_left,
+  .technology .technology_right {
+    width: 100%;
+  }
+
+  .technology .technology_image {
+    width: 100%;
+  }
+
+  .objectives .objectives_content {
+    padding: 4rem 2rem;
+  }
+
+  .objectives .objective_chain {
     flex-direction: column;
   }
 
-  .footer_list li {
+  .objectives .objective_arrow {
+    transform: rotate(90deg);
+  }
+
+  .impact .impact_content {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .impact .impact_left,
+  .impact .impact_right {
+    width: 100%;
+  }
+
+  .impact .impact_right {
+    justify-content: center;
+  }
+
+  .slideshow {
+    padding: 4rem 2rem;
+  }
+
+  .slideshow .slides {
+    height: 400px;
+  }
+
+  .slideshow .slide_overlay {
+    padding: 2rem;
+  }
+
+  .slideshow .slide_overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .quiz {
+    padding: 4rem 2rem;
+  }
+
+  .quiz .quiz_box {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero_header {
+    padding: 1.2rem;
+  }
+
+  .hero_logo {
+    width: 50px;
+  }
+
+  .hero_nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .theme_button {
+    width: 100%;
+  }
+
+  .hero_content {
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .hero_content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero_content p {
+    font-size: 0.95rem;
+  }
+
+  .hero_content .hero_button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .svgLogo {
+    width: 160px;
+  }
+
+  .problem_title,
+  .technology_title,
+  .objectives_title,
+  .impact_title,
+  .slideshow_title,
+  .quiz_title {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+  }
+
+  .problem .card,
+  .impact .card,
+  .technology .technology_card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slideshow .slides {
+    height: 300px;
+  }
+
+  .slideshow .slide_overlay {
+    padding: 1.5rem;
+  }
+
+  .slideshow .slide_overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .slideshow .slide_overlay p {
+    font-size: 0.9rem;
+  }
+
+  .slideshow .slider_buttons button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .quiz .quiz_options {
+    flex-direction: column;
+  }
+
+  .quiz .quiz_options button {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 3rem 1.5rem;
+  }
+
+  .footer .footer_content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer .footer_list li {
+    flex-direction: column;
+    gap: 0.3rem;
     min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero_content h1 {
+    font-size: 1.8rem;
+  }
+
+  .problem_title,
+  .technology_title,
+  .objectives_title,
+  .impact_title,
+  .slideshow_title,
+  .quiz_title {
+    font-size: 1.5rem !important;
+  }
+
+  .problem .problem_content,
+  .technology .technology_content,
+  .impact .impact_content,
+  .objectives .objectives_content,
+  .slideshow,
+  .quiz {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .slideshow .slides {
+    height: 250px;
+  }
+
+  .technology .technology_visual {
+    padding: 1.5rem;
+  }
+
+  .quiz .quiz_box {
+    padding: 1.5rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
   }
 }
